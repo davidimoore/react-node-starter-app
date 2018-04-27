@@ -1,0 +1,29 @@
+{
+  "name": "reactNodeStarterApp",
+  "description": "Heroku ready starter app",
+  "version": "1.0.0",
+  "engines": {
+    "node": "8.11.x",
+    "yarn": "1.6.0"
+  },
+  "author": "David Moore",
+  "license": "MIT",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "dev:server": "nodemon ./server/index.js",
+    "start": "node server",
+    "dev": "concurrently --kill-others-on-fail \"yarn dev:server\" \"yarn client\""
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ],
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.3"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
