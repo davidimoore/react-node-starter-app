@@ -1,1 +1,2 @@
+cp .sample.env .env
 yarn && cd client && yarn && cd ../ && yarn dev
