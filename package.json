@@ -1,10 +1,10 @@
 {
-  "name": "reactNodeStarterApp",
+  "name": "react-node-starter-app",
   "description": "Heroku ready starter app",
   "version": "1.0.0",
   "engines": {
-    "node": "8.11.x",
-    "yarn": "1.6.0"
+    "node": "10.15.x",
+    "yarn": "1.16.0"
   },
   "author": "David Moore",
   "license": "MIT",
